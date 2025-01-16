@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EntityFinder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a7ffeb220df2e29e4b63670458d129449f5614c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+644086a8b3781997bf96cb7b9216557e453faa27")]
 [assembly: System.Reflection.AssemblyProductAttribute("EntityFinder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EntityFinder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

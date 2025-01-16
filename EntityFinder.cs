@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms; // For Clipboard functionality
 using ExileCore2;
 using ExileCore2.PoEMemory.MemoryObjects;
@@ -47,6 +48,16 @@ namespace EntityFinder
                 }
             }
 
+            // Sort entities by distance based on the search mode
+            if (_searchNearMouse)
+            {
+                _matchingEntities.Sort((a, b) => CompareDistanceToMouse(a, b));
+            }
+            else
+            {
+                _matchingEntities.Sort((a, b) => CompareDistanceToCharacter(a, b));
+            }
+
             LogMessage($"Search complete. Matches found: {_matchingEntities.Count}.", 5);
         }
 
@@ -81,9 +92,6 @@ namespace EntityFinder
                 ImGui.Text("Distance from Character:");
                 ImGui.SliderFloat("##DistanceFromCharacter", ref _distanceFromCharacter, 5f, 100f, "%.1f distance");
             }
-
-            ImGui.SameLine();
-
         }
 
         private void SafeSetClipboardText(string text)
@@ -96,7 +104,13 @@ namespace EntityFinder
 
         private void RenderSearchResults()
         {
+            ImGui.Spacing();
+            ImGui.Spacing();
             ImGui.Text("Search Results:");
+
+            ImGui.Spacing();
+            ImGui.Separator();
+            ImGui.Spacing();
 
             if (_matchingEntities.Count == 0)
             {
@@ -116,6 +130,24 @@ namespace EntityFinder
                     }
                 }
             }
+        }
+
+        private int CompareDistanceToMouse(Entity a, Entity b)
+        {
+            var mousePosition = ImGui.GetMousePos();
+            var distanceA = Vector2.Distance(mousePosition, GameController.Game.IngameState.Camera.WorldToScreen(a.Pos));
+            var distanceB = Vector2.Distance(mousePosition, GameController.Game.IngameState.Camera.WorldToScreen(b.Pos));
+            return distanceA.CompareTo(distanceB);
+        }
+
+        private int CompareDistanceToCharacter(Entity a, Entity b)
+        {
+            var characterPosition = GameController.Player.Pos;
+            var distanceA = Vector2.Distance(new Vector2(characterPosition.X, characterPosition.Y),
+                                             new Vector2(a.Pos.X, a.Pos.Y));
+            var distanceB = Vector2.Distance(new Vector2(characterPosition.X, characterPosition.Y),
+                                             new Vector2(b.Pos.X, b.Pos.Y));
+            return distanceA.CompareTo(distanceB);
         }
 
         private bool IsMatch(string entityPath, string searchText)
