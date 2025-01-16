@@ -8,3 +8,4 @@ C:\Users\dusti\Downloads\ECore\Plugins\Source\EntityFinder\obj\Debug\net8.0-wind
 C:\Users\dusti\Downloads\ECore\Plugins\Source\EntityFinder\obj\Debug\net8.0-windows\win-x64\EntityFinder.dll
 C:\Users\dusti\Downloads\ECore\Plugins\Source\EntityFinder\obj\Debug\net8.0-windows\win-x64\refint\EntityFinder.dll
 C:\Users\dusti\Downloads\ECore\Plugins\Source\EntityFinder\obj\Debug\net8.0-windows\win-x64\ref\EntityFinder.dll
+C:\Users\dusti\Downloads\ECore\Plugins\Source\EntityFinder\obj\Debug\net8.0-windows\win-x64\EntityFinder.sourcelink.json
