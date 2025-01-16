@@ -1,0 +1,10 @@
+C:\Users\dusti\Downloads\ECore\Plugins\Source\EntityFinder\bin\Debug\net8.0-windows\EntityFinder.deps.json
+C:\Users\dusti\Downloads\ECore\Plugins\Source\EntityFinder\bin\Debug\net8.0-windows\EntityFinder.dll
+C:\Users\dusti\Downloads\ECore\Plugins\Source\EntityFinder\obj\Debug\net8.0-windows\EntityFinder.csproj.AssemblyReference.cache
+C:\Users\dusti\Downloads\ECore\Plugins\Source\EntityFinder\obj\Debug\net8.0-windows\EntityFinder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dusti\Downloads\ECore\Plugins\Source\EntityFinder\obj\Debug\net8.0-windows\EntityFinder.AssemblyInfoInputs.cache
+C:\Users\dusti\Downloads\ECore\Plugins\Source\EntityFinder\obj\Debug\net8.0-windows\EntityFinder.AssemblyInfo.cs
+C:\Users\dusti\Downloads\ECore\Plugins\Source\EntityFinder\obj\Debug\net8.0-windows\EntityFinder.csproj.CoreCompileInputs.cache
+C:\Users\dusti\Downloads\ECore\Plugins\Source\EntityFinder\obj\Debug\net8.0-windows\EntityFinder.dll
+C:\Users\dusti\Downloads\ECore\Plugins\Source\EntityFinder\obj\Debug\net8.0-windows\refint\EntityFinder.dll
+C:\Users\dusti\Downloads\ECore\Plugins\Source\EntityFinder\obj\Debug\net8.0-windows\ref\EntityFinder.dll

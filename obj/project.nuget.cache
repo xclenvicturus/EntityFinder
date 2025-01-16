@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "m/82NQjaQoo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dusti\\Downloads\\ECore\\Plugins\\Source\\EntityFinder\\EntityFinder.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dusti\\.nuget\\packages\\imgui.net\\1.90.0.1\\imgui.net.1.90.0.1.nupkg.sha512",
+    "C:\\Users\\dusti\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\dusti\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\dusti\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\dusti\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.4.0\\system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
